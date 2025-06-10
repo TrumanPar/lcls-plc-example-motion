@@ -6,7 +6,10 @@ VAR_GLOBAL
     {attribute 'pytmc' := 'pv: @(PREFIX)ARB'}
     fbArbiter: FB_Arbiter(1);
     {attribute 'pytmc' := 'pv: @(PREFIX)FFO:01'}
-    fbFastFaultOutput1: FB_HardwareFFOutput := (bAutoReset := TRUE, i_sNetID := '172.21.148.148.1.1');
+    fbFastFaultOutput1: FB_HardwareFFOutput := (bAutoReset := TRUE, i_sNetID := '172.21.148.161.1.1');
+	{attribute 'pytmc' := 'pv: @(PREFIX)VRC:01'}
+	tstVRC: FB_VRC_NO_FFO;
+	
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

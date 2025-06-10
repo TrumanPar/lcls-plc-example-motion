@@ -317,7 +317,26 @@ MOTION_GVL.fbStandardPMPSDB(
 GVL.fbFastFaultOutput1.Execute();
 fbArbiterIO(
     LA:=GVL.fbArbiter,
-    FFO:=GVL.fbFastFaultOutput1);]]></ST>
+    FFO:=GVL.fbFastFaultOutput1);
+	
+	
+GVL.tstVRC(
+	i_xExtILK_OK:= TRUE, 
+	i_xOverrideMode:= FALSE, 
+	iq_stValve=> , 
+	io_fbFFHWO:= GVL.fbFastFaultOutput1, 
+	fbArbiter:= GVL.fbArbiter, 
+	i_xPMPS_OK:= FALSE, 
+	i_xIsAperture:= TRUE, 
+	i_sDevName:= 'TEST', 
+	i_nTransitionRootID:= );]]></ST>
     </Implementation>
+    <LineIds Name="Main">
+      <LineId Id="3" Count="168" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="317" Count="1" />
+      <LineId Id="320" Count="8" />
+      <LineId Id="319" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

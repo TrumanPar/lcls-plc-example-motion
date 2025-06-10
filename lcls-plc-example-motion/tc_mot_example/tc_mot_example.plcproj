@@ -48,6 +48,10 @@
         </Parameter>
       </Parameters>
     </PlaceholderReference>
+    <PlaceholderReference Include="LCLS Vacuum">
+      <DefaultResolution>LCLS Vacuum, * (SLAC - LCLS)</DefaultResolution>
+      <Namespace>LCLS_Vacuum</Namespace>
+    </PlaceholderReference>
     <PlaceholderReference Include="lcls-twincat-common-components">
       <DefaultResolution>lcls-twincat-common-components, * (SLAC)</DefaultResolution>
       <Namespace>lcls_twincat_common_components</Namespace>
